@@ -52,4 +52,15 @@
         </plugins>
     </build>
 
+    <profiles>
+        <profile>
+            <id>LOCAL</id>
+            <properties>
+                <DATABASE_PASSWORD>postgres</DATABASE_PASSWORD>
+                <DATABASE_URL>jdbc:postgresql://localhost:5432/postgres</DATABASE_URL>
+                <DATABASE_USERNAME>postgres</DATABASE_USERNAME>
+            </properties>
+        </profile>
+    </profiles>
+
 </project>
